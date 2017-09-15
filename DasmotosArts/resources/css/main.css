@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+}
+
+body {    
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 { 
+    color: #fff;
+    font-size: 50px;
+    position: relative;
+    top: 70px;
+}
+h2 {
+    padding: 5px;  
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 16;
+    padding: 10px;
+}
+
+/*The background pattern.jpg image disappears in all other browsers but the linear gradient shows up, and I don't know how to fix it*/
+.banner {
+    background: linear-gradient(
+        rgba(45,103,137,0.9),
+        rgba(100,129,127,0)), url("/resources/images/pattern.jpg");
+    background-size: cover;
+    height: 200px;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    margin:0 auto;
+    width: 880;
+}
+
+
+p {
+  font-family: Helvetica;
+  /*height: 120px;  when I used display:inline-block on .products I had to add height to the paragraphs so all 3 sections aligned at the top because the PAINT paragraph was too many words and pushed the whole section up but I don't know which way is correct.*/
+}
+
+.products {
+    /*display: inline-block;  I don't understand the difference between using float or inline-block in this instance. Do they do the same thing?*/
+    float: left;
+    width: 250px; 
+    padding: 20px;
+}
+
+#brushes {
+    color: #fff;
+    background-color: #dec044;
+    width: 250px;
+    text-align: center;
+}
+
+#frames {
+    color: #fff;
+    background-color: #008C80;
+    width: 250px;
+    text-align: center;
+}
+
+#paint {
+    color: #fff;
+    background-color: #C84B65;
+    width: 250px;
+    text-align: center;
+}
+
+.price {
+    color: #888;
+    margin: 10px;
+    display: block;
+    font-family: Helvetica;
+    font-size: 16px;
+}
